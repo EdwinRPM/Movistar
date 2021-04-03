@@ -1,0 +1,310 @@
+body {
+	font-family: georgia times, serif;
+	color: #333;
+	font-size: 1.2rem;
+	line-height: 1.6em;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+
+section{
+	float: left;
+	width: 30%;
+	padding: 15px;
+	height: auto;
+}
+
+.aside h1{
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+.post2{
+	background: rgba(0,170,228,0.5);
+	text-align: center;
+
+}
+
+.post{
+	text-align: justify;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+.aside{
+	float: right;
+	width: 64%;
+	padding: 10px;
+	height: auto;
+
+}
+
+.imagflo{
+	float: right;
+	padding: 2px;
+}
+
+
+
+
+
+
+
+
+
+.container {
+	width: 90%;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.header {
+	background: url(https://img.vixdata.io/pd/jpg-large/es/sites/default/files/imj/L/Los-5-mejores-paisajes-del-mundo-1.jpg); 
+	background-size: 100vw 100vh;
+	color: white;
+	padding: 2rem 0;
+
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+
+}
+	.header a {
+		color: white;
+		text-decoration: none;
+
+	}
+
+.logo-nav-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.logo {
+	letter-spacing: 15px;
+	font-size: 1.2em;
+}
+
+.menu-icon {
+	display: none;
+}
+
+
+.navigation ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+	.navigation ul li {
+		display: inline-block;
+	}
+
+		.navigation ul li a {
+			display: block;
+			padding: 0.5rem 1rem;
+			transition: all 0.4s linear;
+			border-radius: 5px;
+		}
+
+			.navigation ul li a:hover {
+				background: #4a4a4a;
+			}
+
+.main {
+	padding-top: 8rem;
+}
+
+
+.footer {
+	background: rgba(0,0,0,0.8);
+	color: white;
+	width: 100%;
+	position: relative;
+	margin-top: 10px;
+}
+
+.container-footer-all {
+	width: 90%;
+	max-width:900px;
+	margin: auto;
+	padding: 40px;
+
+}
+
+.container-body {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column1 {
+	max-width: 400px;
+}
+
+.column1 h1 {
+	font-size: 22px;
+}
+
+.column1 p {
+	font-size: 14px;
+	color: #C7C7C7;
+	margin-top: 20px;
+}
+
+.column2 {
+	max-width: 400px;
+}
+
+.column2 h1 {
+	font-size: 22px;
+}
+
+.row {
+	margin-top: 20px;
+	display: flex;
+}
+
+.row img{
+	width: 36px;
+	height: 36px;
+}
+
+.row label {
+	margin-top: 10px;
+	margin-left: 15px;
+	color: #C7C7C7;
+}
+
+.column3 {
+	max-width: 400px;
+}
+
+.column3 h1 {
+	font-size: 22px;
+}
+
+.row2 {
+	margin-top: 20px;
+	display: flex;
+}
+
+.row2 img {
+	width: 36px;
+	height: 36px;
+}
+
+.row2 label {
+	margin-top: 10px;
+	margin-left: 20px;
+	max-width: 140px;
+}
+
+.container-footer {
+	max-width: 100%;
+	background: #101010; 
+}
+
+.footer2 {
+	max-width: 950px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+.copyrigth {
+	color: #C7C7C7;
+}
+
+.copyrigth a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+.imformation a {
+	text-decoration: none;
+	color: #C7C7C7;
+}
+
+
+
+@media only screen and (max-width: 767px){
+
+	.menu-icon {
+		display: block;
+		cursor: pointer;
+		padding: 0.5rem 1rem;
+	}
+
+	.navigation	{
+		width: 100%;
+		margin-top: 1rem;
+	}
+
+		.navigation ul {
+			display: none;
+		}
+
+		.navigation ul.show {
+			display: block;
+		}
+
+		.navigation ul li {
+			display: block;
+		}
+
+			.navigation ul li a {
+				display: block;
+				padding: 0.5rem 0;
+				transition: all 0.4s linear;
+				border-radius: 5px;
+			}
+
+				.navigation ul li a:hover {
+					background: #4a4a4a;
+				}
+	.container-body {
+		flex-wrap: wrap;
+	}
+
+	.column1 {
+		max-width: 100%;
+	}
+
+	.column2,
+	.column3,{
+		margin-top: 40px;
+	}
+
+}
+
+@media only screen and (max-width: 927px){
+ 	body{
+ 		width: 100%;
+ 		flex-wrap: wrap;
+ 	}
+ 	
+ 	section{
+ 		flex-wrap: wrap;
+ 		float: left;
+		width: 100%;
+		padding: 15px;
+		height: auto;
+ 	}
+ 	.aside{
+ 		max-width: 100%;
+ 		padding: auto;
+ 		margin-left: auto;
+ 		text-align: center;
+ 	}	
+ 
+}
